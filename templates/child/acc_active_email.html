@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<head>
+    <style type="text/css">
+        p{
+            color: #5f6163;
+        }
+    </style>
+</head>
+<body style="background-color:#f2f2f2;padding-bottom: 5%;padding-top:5%;font-family: 'Roboto';">
+    <div style="background-color: white;width: 48%;border-radius: 20px; padding: 4%;margin-left: auto;display:block;margin-right: auto;">
+        <h4 style="text-align: center;font-size: 30px;">Verify Your Family Member Absence</h4>
+        <h4 style="padding-top: 2%;margin-top: 0px;">Hi {{profile.user.first_name}}</h4>
+        <p style="word-wrap: inherit;">{{user.first_name}} from {{region}}, wants to access your family member {{profile.name}} profile. Please confirm that your child absence, and if you want to give him access, Click on Allow {{user.first_name}}.</p>
+        <br>
+        <a href="{{url}}" style="text-decoration: none; display: block; background-color: #34b7dc; margin-left: auto;margin-right: auto;padding: 7px;border-radius: 3px;color: white;width: 250px;text-align: center;margin-bottom: 6%;">Allow {{user.first_name}}</a>
+        <p>
+        <p>If {{profile.name}} is having with you, no further action is required.</p>
+        <p style="margin: 0%;padding: 0%;">Regards,</p>
+        <p style="margin: 0%;padding: 0%;" >Milaap</p>
+        <br>
+        <div style="background-color: gray;min-height:1px;margin-bottom: 1%;margin-top: 3%;"></div>
+            <p>If you're having trouble clicking the "Allow {{user.name}}" button, copy and paste the given URL below into your browser<br><a href="{{url}}">{{url}}</a></p>
+    </div>
+</body>
+</html>
